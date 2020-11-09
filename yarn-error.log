@@ -1,0 +1,64 @@
+Arguments: 
+  /Users/lachlan/.nvm/versions/node/v14.9.0/bin/node /Users/lachlan/.yarn/bin/yarn.js add rollup rollup-vue-plugin@5
+
+PATH: 
+  /Users/lachlan/.nvm/versions/node/v14.9.0/bin:/Users/lachlan/.yarn/bin:/Users/lachlan/.config/yarn/global/node_modules/.bin:/Users/lachlan/.deno/bin:/usr/local/sbin:/Users/lachlan/.rbenv/bin:/usr/local/opt/libpq/bin:/Users/lachlan/perl5/bin:/usr/local/opt/gettext/bin:/Users/lachlan/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/go/bin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.9.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/rollup-vue-plugin: Not found
+      at Request.params.callback [as _callback] (/Users/lachlan/.yarn/lib/cli.js:66987:18)
+      at Request.self.callback (/Users/lachlan/.yarn/lib/cli.js:140748:22)
+      at Request.emit (events.js:314:20)
+      at Request.<anonymous> (/Users/lachlan/.yarn/lib/cli.js:141720:10)
+      at Request.emit (events.js:314:20)
+      at IncomingMessage.<anonymous> (/Users/lachlan/.yarn/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:420:28)
+      at IncomingMessage.emit (events.js:326:22)
+      at endReadableNT (_stream_readable.js:1244:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "vue-edge",
+    "version": "1.0.0",
+    "description": "A vue Library with reusable components",
+    "main": "src/index.js",
+    "scripts": {
+      "clean": "rimraf dist",
+      "serve": "webpack-dev-server --mode development",
+      "build": "npm run clean && webpack --mode production",
+      "test": "npm run test"
+    },
+    "author": "Gaurav Kumar",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.12.3",
+      "@babel/preset-env": "^7.12.1",
+      "babel-loader": "^8.1.0",
+      "css-loader": "^5.0.0",
+      "html-webpack-plugin": "^4.5.0",
+      "rimraf": "^3.0.2",
+      "vue": "^2.6.12",
+      "vue-loader": "^15.9.3",
+      "vue-style-loader": "^4.1.2",
+      "vue-template-compiler": "^2.6.12",
+      "webpack": "^4.44.1",
+      "webpack-cli": "^3.3.12",
+      "webpack-dev-server": "^3.11.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
