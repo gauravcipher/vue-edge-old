@@ -2,7 +2,9 @@
   "name": "vue-edge",
   "version": "1.0.0",
   "description": "A vue Library with reusable components",
-  "main": "src/index.js",
+  "main": "dist/vue-edge.js",
+  "browser": "dist/vue-edge.browser.js",
+  "unpkg": "dist/vue-edge.browser.js",
   "scripts": {
     "clean": "rimraf dist",
     "serve": "webpack-dev-server --mode development",
@@ -14,9 +16,12 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
+    "@rollup/plugin-commonjs": "^16.0.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^5.0.0",
     "html-webpack-plugin": "^4.5.0",
+    "jsdom": "^16.4.0",
+    "jsdom-global": "^3.0.2",
     "rimraf": "^3.0.2",
     "vue": "^2.6.12",
     "vue-loader": "^15.9.3",
@@ -25,5 +30,13 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@vue/test-utils": "^1.1.1",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "rollup": "^2.33.1",
+    "rollup-plugin-vue": "5",
+    "vue-jest": "^4.0.0-beta.6"
   }
 }

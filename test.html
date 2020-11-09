@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="/node_modules/vue/dist/vue.js"></script>
+  <script src="/dist/vue-edge.browser.js"></script>
+</head>
+<body>
+  
+  <div id="app"></div>
+  <script>
+    Vue.use(VueEdge)
+
+    const app = new Vue({
+      el: '#app',
+      template: `
+        <ve-button />
+      `
+    })
+  </script>
+</body>
+</html>
